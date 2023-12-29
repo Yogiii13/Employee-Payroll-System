@@ -10,7 +10,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("login_background.jpg");
+    background-color: #12171e;
+    background-image: url(5570834.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
@@ -21,7 +23,7 @@ body {
 display: flex;
     top: 2%;
     text-align: center;
-    color: #4f4d4d;
+    color: #fffcfc;
     padding: 10px 10px;
     border-radius: 12px;
 
@@ -128,19 +130,4 @@ display: flex;
 
 .register-link p a:hover {
     text-decoration: underline;
-}
-.bg_img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.BG_IMG {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
