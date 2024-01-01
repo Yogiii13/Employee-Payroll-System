@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="department.css">
+    <title>Employee Payroll System - Department Section</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Department Section</h2>
+        
+        <!-- Department Form -->
+        <form id="departmentForm">
+            <label for="departmentID">Department ID:</label>
+            <input type="text" id="departmentID" name="departmentID" required>
+            
+            <label for="departmentName">Department Name:</label>
+            <input type="text" id="departmentName" name="departmentName" required>
+            
+            <button type="button" onclick="addDepartment()">Add Department</button>
+        </form>
+
+        <!-- Department Table -->
+        <table id="departmentTable">
+            <thead>
+                <tr>
+                    <th>Department ID</th>
+                    <th>Department Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Department rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="department.js"></script>
+</body>
+</html>
