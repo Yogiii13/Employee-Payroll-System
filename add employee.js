@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $("#back").click(function(){
+        window.location.href = 'employee.html';
+    });
     $("#addEmployeeButton").click(function() {
         var employeeId = $("#employeeId").val();
         var employeeName = $("#employeeName").val();
