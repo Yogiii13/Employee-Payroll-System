@@ -1,27 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="department.css">
-    <title>Employee Payroll System - Department Section</title>
+    <link rel="stylesheet" href="home.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Department</title>
 </head>
-<body>
-    <div class="container">
-        <h2>Department Section</h2>
-        
-        <!-- Department Form -->
-        <form id="departmentForm">
-            <label for="departmentID">Department ID:</label>
-            <input type="text" id="departmentID" name="departmentID" required>
-            
-            <label for="departmentName">Department Name:</label>
-            <input type="text" id="departmentName" name="departmentName" required>
-            
-            <button type="button" onclick="addDepartment()">Add Department</button>
-        </form>
 
-        <!-- Department Table -->
+<body>
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class='bx bx-user'></i>
+                <span> Main Menu</span>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <div class="user">
+            <div>
+                <p class="bold">Admin</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="home.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="nav-items"> Home</span>
+                </a>
+                <!-- <span class="tooltip">Home</span> -->
+            </li>
+            <li>
+                <a href="employee.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="nav-items">Employee</span>
+                </a>
+                <!-- <span class="tooltip">Employee</span> -->
+            </li>
+            <li>
+                <a href="department.html"><i class='bx bx-copy-alt'></i>
+                    <span class="nav-items">Department</span>
+                </a>
+                <!-- <span class="tooltip">Department</span> -->
+            </li>
+            <li>
+                <a href="payroll.html">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="nav-items">Payroll </span>
+                </a>
+                <!-- <span class="tooltip">Payroll</span> -->
+            </li>
+            <li>
+                <a href="user.html">
+                    <i class='bx bx-group'></i>
+                    <span class="nav-items">Users</span>
+                </a>
+                <!-- <span class="tooltip">Users</span> -->
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="nav-items">Logout</span>
+                </a>
+                <!-- <span class="tooltip">Logout</span> -->
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Employee Payroll System</h1>
+        </div>
+        <div class="department-container">
+            <h2>Department Section</h2>
+            
+            <form id="departmentForm">
+                <label for="departmentID">Department ID:</label>
+                <input type="text" id="departmentID" name="departmentID" required>
+            
+                <label for="departmentName">Department Name:</label>
+                <input type="text" id="departmentName" name="departmentName" required>
+            
+                <button type="button" onclick="addDepartment()">Add Department</button>
+            </form>
+            
+        </div>
         <table id="departmentTable">
             <thead>
                 <tr>
@@ -30,11 +94,19 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Department rows will be dynamically added here -->
+        
             </tbody>
         </table>
     </div>
-
     <script src="department.js"></script>
 </body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    }
+</script>
+
 </html>

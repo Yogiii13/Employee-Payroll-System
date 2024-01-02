@@ -157,12 +157,6 @@
     padding: 10px 40px;
 }
 
-table,
-th,
-td {
-    border: solid black;
-}
-
 .employee-container {
     display: flex;
     align-items: center;
@@ -180,24 +174,80 @@ td {
     display: inline-flex;
     position: absolute;
     right: 2.4rem;
-}
-
-.button {
-    text-decoration-color: black;
-    border-radius: 5px;
-    padding: 5px 5px;
-    position: 80%;
-    font-size: 16px;
-    margin: 2px 2px;
-    cursor: pointer;
+    background-color: #fff;
 }
 
 table {
     position: relative;
     top: 2.4rem;
     left: 8px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.department-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 2.4rem;
+    left: 8px;
     border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     border-radius: 10px;
     padding: 10px 40px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
     width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 2.4rem;
+    left: 8px;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 10px 40px;
+
 }
