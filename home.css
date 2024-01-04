@@ -163,8 +163,8 @@
     position: relative;
     top: 2.4rem;
     left: 8px;
-    border: 2px solid rgba(225, 255, 255, .2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 2px solid rgba(88, 88, 88, 0.2);
+    box-shadow: 0 0 10px rgba(31, 31, 31, 0.2);
     border-radius: 10px;
     padding: 10px 40px;
 
@@ -194,7 +194,7 @@ td {
 }
 
 th {
-    background-color: #4caf50;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -228,6 +228,76 @@ input {
 
 button {
     padding: 10px;
+    background-color: #b1b1b1;
+    color: #858585;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9a9a9a;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 2.4rem;
+    left: 8px;
+    border: 2px solid rgba(67, 67, 67, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px 40px;
+
+}
+
+.payroll-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 2.4rem;
+    left: 8px;
+    border: 2px solid rgba(67, 67, 67, 0.2);
+    box-shadow: 5 5 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px 40px;
+
+}
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
     background-color: #4caf50;
     color: #fff;
     border: none;
@@ -239,15 +309,9 @@ button:hover {
     background-color: #45a049;
 }
 
-.user-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 2.4rem;
-    left: 8px;
-    border: 2px solid rgba(225, 255, 255, .2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    border-radius: 10px;
-    padding: 10px 40px;
-
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
 }
+*/

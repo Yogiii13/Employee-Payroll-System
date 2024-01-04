@@ -24,6 +24,7 @@ function calculatePayroll() {
 
     // Display result
     var resultElement = document.getElementById("result");
+    resultElement.classList.add("result-element");
     resultElement.textContent = `Payroll Summary for ${employeeName} (${month} ${year}):
         Total Pay Before Tax: $${totalPayBeforeTax.toFixed(2)}
         Tax Amount: $${taxAmount.toFixed(2)}
